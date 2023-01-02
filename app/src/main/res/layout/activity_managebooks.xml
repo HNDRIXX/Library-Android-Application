@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/managebooks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Manage Books"
+        android:textColor="#752424"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/addnewbook"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/managebooks"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:text="Add New Book"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        android:textSize="16dp"
+        app:backgroundTint="#6E1616"
+        app:icon="@drawable/ic_baseline_add_24"
+        app:iconGravity="start"
+        app:iconSize="25dp"
+        app:iconTint="#390E0E" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/issuebooks"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addnewbook"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FAFAFA"
+        android:padding="10dp"
+        android:text="Issue Books"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        app:iconTint="#390E0E"
+        android:textSize="16dp"
+        app:icon="@drawable/ic_baseline_pending_24"
+        app:iconGravity="start"
+        app:iconSize="25dp"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/returnbooks"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/issuebooks"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FAFAFA"
+        android:padding="10dp"
+        android:stateListAnimator="@null"
+        android:text="Return Books"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        android:textSize="16dp"
+        app:icon="@drawable/ic_book_return"
+        app:iconGravity="start"
+        app:iconSize="25dp"
+        app:iconTint="#390E0E" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/bookrecords"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/returnbooks"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:backgroundTint="#FAFAFA"-->
+<!--        android:padding="10dp"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        android:text="Book Records"-->
+<!--        android:textAlignment="viewStart"-->
+<!--        android:textColor="#390E0E"-->
+<!--        android:textSize="16dp"-->
+<!--        app:icon="@drawable/ic_baseline_book_24"-->
+<!--        app:iconGravity="start"-->
+<!--        app:iconSize="25dp"-->
+<!--        app:iconTint="#390E0E" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/updatecatalog"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/returnbooks"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FAFAFA"
+        android:padding="10dp"
+        android:stateListAnimator="@null"
+        android:text="Update Catalog"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        android:textSize="16dp"
+        app:icon="@drawable/ic_baseline_update_24"
+        app:iconGravity="start"
+        app:iconSize="26dp"
+        app:iconTint="#390E0E" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/updatebookcatalogue"-->
+<!--        style="?android:attr/borderlessButtonStyle"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/updatebookrecords"-->
+<!--        android:layout_marginStart="20dp"-->
+<!--        android:layout_marginTop="1dp"-->
+<!--        android:layout_marginEnd="20dp"-->
+<!--        android:backgroundTint="#FAFAFA"-->
+<!--        android:padding="10dp"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        android:text="Update Book Catalogue"-->
+<!--        android:textAlignment="viewStart"-->
+<!--        android:textColor="#390E0E"-->
+<!--        android:textSize="16dp"-->
+<!--        app:icon="@drawable/ic_baseline_update_24"-->
+<!--        app:iconGravity="start"-->
+<!--        app:iconSize="30dp"-->
+<!--        app:iconTint="#390E0E" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+
+</RelativeLayout>

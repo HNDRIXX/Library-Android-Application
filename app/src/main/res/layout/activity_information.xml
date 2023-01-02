@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@null"
+        android:text="General\n Information"
+        android:textColor="#752424"
+        android:textSize="29dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="-1dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/notice"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/information"-->
+<!--        android:drawableTop="@drawable/ic_sad_icon"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:drawableTint="#ABAAA5A5"-->
+<!--        android:gravity="center"-->
+<!--        android:text=" No Information found."-->
+<!--        android:textColor="#ABAAA5A5"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="50dp" />
+
+            <com.smarteist.autoimageslider.SliderView
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"
+                android:layout_below="@id/spacing"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                app:sliderAnimationDuration="1000"
+                app:sliderAutoCycleDirection="back_and_forth"
+                app:sliderIndicatorAnimationDuration="1000"
+                app:sliderIndicatorEnabled="true"
+                app:sliderIndicatorGravity="center_horizontal|bottom"
+                app:sliderIndicatorMargin="15dp"
+                app:sliderIndicatorOrientation="horizontal"
+                app:sliderIndicatorPadding="3dp"
+                app:sliderIndicatorRadius="2dp"
+                app:sliderIndicatorSelectedColor="#4C1313"
+                app:sliderIndicatorUnselectedColor="#FFF"
+                app:sliderScrollTimeInSec="5000" />
+
+            <ImageView
+                android:id="@+id/ahs"
+                android:layout_width="500dp"
+                android:layout_height="315dp"
+                android:layout_below="@id/slider"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ahs1"
+                android:visibility="gone"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+</RelativeLayout>
+            <TextView
+                android:id="@+id/ahsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ahs"
+                android:layout_marginStart="20dp"
+                android:text="Araullo High School"
+                android:textColor="#530202"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ahsContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ahsTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Araullo High School (AHS) is a public high school founded in 1906 located in United Nations Avenue, Manila, Philippines recognized by the Department of Education (DepEd)."
+                android:textColor="#530202"
+                android:textSize="13dp" />
+
+            <RelativeLayout
+                android:id="@+id/relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ahsContent"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="40dp">
+
+                <ImageView
+                    android:id="@+id/myImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/bgtinted" />
+
+                <TextView
+                    android:id="@+id/vision"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@id/myImageViewText"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="125dp"
+                    android:layout_marginStart="20dp"
+                    android:gravity=""
+                    android:text="Vision"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/myImageViewText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity=""
+                    android:paddingTop="50dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam semper, sem tempus malesuada vulputate, erat nunc aliquet felis, id ornare nibh lorem in dui. In at cursus est, eu gravida lacus. Etiam tristique nec erat vel ornare. Proin vel felis felis. Phasellus consequat quam in mattis malesuada. Maecenas gravida mi."
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+</RelativeLayout>

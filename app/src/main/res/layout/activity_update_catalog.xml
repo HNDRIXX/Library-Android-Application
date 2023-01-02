@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateCatalog"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="5dp">
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_stroke"
+            android:layout_margin="20dp"
+            app:queryHint="Search Here..."
+            app:iconifiedByDefault="false"
+            android:inputType="textCapSentences"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:id="@+id/imageBookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:background="#86686868"
+        android:translationZ="90dp">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/imageViewBookZoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_bookimage" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exit"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="-45dp"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/backcorner"
+            android:paddingEnd="30dp"
+            android:translationZ="100dp"
+            android:text="✖"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="90dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spacing"
+                android:layout_marginBottom="120dp"
+                android:elevation="10dp"
+                android:nestedScrollingEnabled="false" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:elevation="100dp"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+
+</RelativeLayout>

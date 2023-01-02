@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/progressBarBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E2D56262"
+        android:elevation="100dp"
+        android:visibility="gone"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Large"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+
+        android:elevation="100dp"
+        android:visibility="gone"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/progress_bg"
+        android:progress="0"
+        />
+
+    <TextView
+        android:id="@+id/progressBarText"
+        android:background="#00000000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#2B0505"
+        android:text="LOADING."
+        android:elevation="100dp"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_alignLeft="@id/progressBar"
+        android:layout_alignRight="@id/progressBar"
+        android:layout_below="@id/progressBar"/>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/ahsbg"
+        android:alpha="0.4"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:id="@+id/row0"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:layout_marginBottom="-20dp">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Welcome,"
+                android:textColor="@color/barmaroon"
+                android:textSize="32dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row1"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/profile"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="My Account"
+                android:backgroundTint="#ffff"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                app:icon="@drawable/ic_baseline_face_24"
+                app:iconSize="65dp"
+                app:iconGravity="textTop"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/managerecords"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="View Records"
+                android:backgroundTint="#ffff"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                app:icon="@drawable/ic_baseline_file_copy_24"
+                app:iconSize="60dp"
+                app:iconGravity="textTop"
+                style="?android:attr/borderlessButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row2"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/managebooks"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/profile"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_weight="1"
+                android:backgroundTint="#ffff"
+                android:text="Manage Books"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                app:icon="@drawable/ic_baseline_book_24"
+                app:iconGravity="textTop"
+                app:iconSize="60dp"
+                />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/managepolicy"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_baseline_rule_24"
+                app:iconSize="60dp"
+                app:iconGravity="textTop"
+                android:backgroundTint="#ffff"
+                android:layout_below="@+id/search"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                android:text="MANAGE POLICY"
+                style="?android:attr/borderlessButtonStyle"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/row3"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/manageinformation"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/books"
+                android:backgroundTint="#ffff"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                android:text="MANAGE
+                Information"
+                app:icon="@drawable/ic_baseline_info_24"
+                app:iconSize="65dp"
+                app:iconGravity="textTop"
+                style="?android:attr/borderlessButtonStyle"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/contacts"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                app:icon="@drawable/ic_baseline_email_24"
+                app:iconSize="63dp"
+                app:iconGravity="textTop"
+                android:textColor="#390E0E"
+                app:iconTint="#390E0E"
+                android:backgroundTint="#ffff"
+                android:layout_below="@+id/books"
+                android:text="Manage\nLibrary Contacts"
+                style="?android:attr/borderlessButtonStyle"/>
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1" >
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/home"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/text"
+                android:background="@drawable/shape"
+                android:textColor="@color/white"
+                app:iconTint="@color/white"
+                android:padding="15dp"
+                app:backgroundTint="#752424"
+
+                app:icon="@drawable/ic_baseline_home_24"
+                app:iconSize="38dp"
+                app:iconGravity="textStart"/>
+
+            <!--        <com.google.android.material.button.MaterialButton-->
+            <!--            app:icon="@drawable/ic_baseline_card_membership_24"-->
+            <!--            app:iconGravity="textTop"-->
+            <!--            app:backgroundTint="#752424"-->
+            <!--            android:id="@+id/digitalcard"-->
+            <!--            android:layout_width="0dp"-->
+            <!--            android:layout_height="fill_parent"-->
+            <!--            android:layout_weight="1"-->
+            <!--            android:padding="10dp"-->
+            <!--            android:textSize="11dp"-->
+            <!--            android:text="Digital Card"-->
+            <!--            android:textColor="@color/white"-->
+            <!--            app:iconTint="@color/white"-->
+            <!--            android:background="@drawable/shape"-->
+            <!--            />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/signout"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:layout_below="@+id/text"
+                android:background="@drawable/shape"
+                android:padding="10dp"
+                app:iconTint="@color/white"
+                app:backgroundTint="#752424"
+                app:icon="@drawable/ic_baseline_login_24"
+                app:iconSize="34dp"
+                app:iconGravity="textStart" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

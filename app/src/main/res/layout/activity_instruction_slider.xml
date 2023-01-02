@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InstructionSlider"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/spacing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        android:visibility="gone"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/instructionSlider"
+        android:layout_below="@id/spacing"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/previousButton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        app:backgroundTint="#00FFFFFF"
+        android:layout_alignParentLeft="true"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconSize="33dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/nextButton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape"
+        app:backgroundTint="#00FFFFFF"
+        android:layout_alignParentRight="true"
+        app:icon="@drawable/ic_baseline_arrow_forward_ios_24"
+        app:iconSize="33dp"
+        />
+
+<!--    <TextView-->
+<!--        android:id="@+id/spacing"-->
+<!--        android:layout_below="@id/instructionSlider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content" />-->
+
+    <TextView
+        android:id="@+id/contentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/instructionSlider"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="60dp"
+        android:textAlignment="center"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:textColor="#530A0A"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/aboutContent1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/contentTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/slide1"
+        android:textAlignment="center"
+        android:textColor="#530A0A"
+        android:textSize="13dp"
+        tools:ignore="MissingConstraints"
+
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/aboutContent2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@id/contentTitle"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/slide2"
+        android:textAlignment="center"
+        android:textColor="#530A0A"
+        android:textSize="13dp"
+        tools:ignore="MissingConstraints"
+
+        android:visibility="gone"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_below="@id/aboutContent2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#752424"
+        android:padding="20dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="Let's Start"
+        android:textColor="@color/white"
+
+        android:visibility="gone"/>
+
+</RelativeLayout>

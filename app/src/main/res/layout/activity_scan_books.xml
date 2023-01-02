@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/scanbookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@null"
+        android:text="Scan Book"
+        android:textColor="#752424"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="-1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="-1dp">
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="30dp" />
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/imageView"
+                android:layout_width="400dp"
+                android:layout_height="350dp"
+                android:layout_below="@id/spacing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/scanner" />
+
+            <TextView
+                android:id="@+id/bookResultText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:text="Book Result: "
+                android:textAlignment="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/bookResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bookResultText"
+                android:layout_marginTop="10dp"
+                android:text="CAPTURE"
+                android:textAlignment="center"
+                android:textColor="#471111"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/bookPercentageText"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/bookResult"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="Book Percentage:"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="18dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/bookPercentageResult"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/bookPercentageText"-->
+<!--                android:text="- - - - - - - -"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:textAlignment="center"-->
+<!--                android:textSize="16dp" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/picturebutton"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_below="@id/bookResult"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="110dp"
+                android:background="@drawable/circle"
+                android:drawableEnd="@drawable/ic_baseline_camera_24"
+                android:paddingEnd="15.5dp"
+                android:paddingBottom="3dp"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:elevation="100dp"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+</RelativeLayout>

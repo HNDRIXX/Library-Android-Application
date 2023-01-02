@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:paddingBottom="10dp">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:id="@+id/locationMovable"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/noticemovable" />
+
+            <TextView
+                android:id="@+id/spacingNotice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/locationMovable"
+                android:paddingTop="10dp" />
+
+            <TextView
+                android:id="@+id/noticeLocationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@id/spacingNotice"
+                android:text="Great!"
+                android:layout_toRightOf="@id/locationMovable"
+                android:textColor="@color/barmaroon"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/noticeLocationTitle"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@id/locationMovable"
+                android:text="Our app has a function that allows you to quickly and closely locate a book using our PathFinder guide."
+                android:textColor="@color/barmaroon"
+                android:textSize="12dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitNotice"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="#00FFFFFF"
+                android:elevation="2dp"
+                android:text="✖"
+                android:textAlignment="center"
+                android:textColor="@color/barmaroon"
+                android:textSize="20dp" />
+        </RelativeLayout>
+</RelativeLayout>

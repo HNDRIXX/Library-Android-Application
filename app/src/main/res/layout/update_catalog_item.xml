@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_bookimage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookTitle"
+            android:text="Book Title"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookAuthor"
+            android:text="Author"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookTitle"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookColNumber"
+            android:text="Col#"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookAuthor"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookPublisher"
+            android:text="Publisher"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookColNumber"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookCopies"
+            android:text="Undefined"
+            android:visibility="gone"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookPublisher"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookCategory"
+            android:text="Category"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookCopies"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookCategory"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/imageView"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnEdit"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginRight="5dp"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_baseline_edit_note_24"
+                android:drawablePadding="-11dp"
+                android:drawableTint="@color/barmaroon"
+                android:paddingStart="8dp"
+                android:text="EDIT   "
+                android:textAlignment="center"
+                android:textColor="@color/barmaroon"
+                android:textSize="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDelete"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="#00FFFFFF"
+                android:drawableTop="@drawable/ic_baseline_delete_24"
+                android:drawablePadding="-11dp"
+                android:drawableTint="@color/barmaroon"
+                android:paddingStart="8dp"
+                android:paddingTop="10dp"
+                android:text="DELETE"
+                android:layout_marginTop="-7dp"
+                android:textColor="@color/barmaroon"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

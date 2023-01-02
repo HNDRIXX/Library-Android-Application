@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    cardCornerRadius="6dp"
+    android:elevation="6dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction Code :    "
+                android:textSize="14dp"
+                android:textColor="#4E4D4D"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/transactionCodeContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="- - - - - - -"
+                android:textSize="14dp"
+                android:textColor="#4E4D4D"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Borrower's Name :     "
+                android:textSize="14dp"
+                android:textColor="#4E4D4D"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/fullNameContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#4E4D4D"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Title : "
+                android:layout_marginEnd="60dp"
+                android:textSize="13.6dp"
+                android:textColor="#4E4D4D"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/bookTitleContent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14dp"
+                android:textColor="#4E4D4D"
+                />
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:orientation="horizontal"-->
+<!--            >-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Transaction Flag : "-->
+<!--                android:layout_marginEnd="19.5dp"-->
+<!--                android:textSize="13.6dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textStyle="bold"-->
+<!--                />-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/transactionFlagContent"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lorem Ipsum"-->
+<!--                android:textSize="14dp"-->
+<!--                android:textColor="@color/black"-->
+<!--                />-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

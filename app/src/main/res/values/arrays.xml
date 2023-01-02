@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="category">
+        <item>Select</item>
+        <item>Applied Science</item>
+        <item>Arts and Creation</item>
+        <item>History</item>
+        <item>Encyclopedia</item>
+        <item>Pure Science</item>
+        <item>Social Science</item>
+        <item>Religion</item>
+        <item>Language</item>
+        <item>Literature</item>
+        <item>General Works</item>
+        <item>Philosophy</item>
+    </array>
+</resources>
+

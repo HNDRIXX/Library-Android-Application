@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/circle.xml" value="0.2075" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/ic_baseline_camera_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/ic_baseline_camera_alt_24.xml" value="0.2075" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/search_stroke.xml" value="0.1635" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/shape.xml" value="0.1635" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/drawable/solidborder.xml" value="0.1635" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_addbook.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_adminhome.xml" value="0.18" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_borrowed_books_list.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_borrowed_user_list.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_information.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_instruction_slider.xml" value="0.21" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_intro_slider.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_issue_books.xml" value="0.2" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_issue_books_click.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_librarycontacts.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_libraryinfo.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_libraryuserinfo.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_libraryusers.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_managebooks.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_managepolicy.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_profile.xml" value="0.14" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_register.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_return_books.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_return_books_click.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_returned_books_list.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_scan_books.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_scan_books_success.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_scan_books_success_click.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_searchbooks.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_searchbooksclick.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_shelves.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_shelves_click.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_update_catalog.xml" value="0.2" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_userhome.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/activity_viewrecords.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/dialog_pathfinder.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/dialog_positive_layout.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/instructionslider.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/issue_and_return_item.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/search_item.xml" value="0.25" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/shelves_item.xml" value="0.5" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/slider_layout.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/spinner_item.xml" value="0.22" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/splashscreen.xml" value="0.16417272338606242" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/update_catalog_item.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/update_popup.xml" value="0.33" />
+        <entry key="..\:/Users/Patrick/Documents/AndroidStudioProjects/LibraryApp/app/src/main/res/layout/useritem.xml" value="0.75" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

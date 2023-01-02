@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/updateDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@null"
+        android:text="Update Details"
+        android:textColor="#752424"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/backcorner"
+        android:translationZ="100dp"
+        android:elevation="10dp"
+        android:text="✖"
+        android:paddingBottom="10dp"
+        android:paddingEnd="1.5dp"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="-1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="70dp" />
+
+            <LinearLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/spacing">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Book Title : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtbookTitle"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-85dp"
+                    android:layout_marginTop="30dp"
+                    android:inputType="textCapWords"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Author/s : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtbookAuthor"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-75dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:inputType="textCapWords"
+                    android:paddingTop="2dp"
+                    android:paddingStart="10dp"
+                    android:padding="5dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Publisher : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtPublisher"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-80dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Col Number : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtColNum"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-97dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Category : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtCategory"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-77dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:padding="5dp"
+                    android:inputType="textCapWords"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Copies : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtCopies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-62dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="#2B0505"
+                    android:textCursorDrawable="@null"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:text="Image Url : "
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <EditText
+                    android:id="@+id/TxtImgUrl"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-82dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="40dp"
+                    android:paddingBottom="2dp"
+                    android:paddingTop="2dp"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/rounded"
+                    android:textColor="#2B0505"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout6"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:layout_marginRight="80dp"
+                android:layout_marginLeft="80dp"
+                android:text="UPDATE"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/rounded"
+                android:gravity="center"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

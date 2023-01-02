@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShelvesClick"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/issueRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@null"
+        android:text="Details"
+        android:textColor="#752424"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/backcorner"
+        android:text="✖"
+        android:textSize="30dp"
+        android:paddingStart="26dp"
+        android:translationZ="100dp"
+        android:elevation="10dp"
+        android:paddingTop="19dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="-1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="85dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_below="@+id/spacing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/icon_bookimage" />
+
+            <LinearLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/transactionCodeTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Transaction No."
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/transactionCodeView"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-113dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookTitleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Title"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookTitleView"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-73dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginBottom="50dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/requestDateTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Request Issued"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/requestDateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-110dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Lorem Ipsum"
+                    android:textColor="#2B0505"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp"
+                    />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="850dp"
+                android:layout_height="750dp"
+                android:layout_below="@id/layout3"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iconLocation"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginStart="-10dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_location_on_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookLocationTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iconLocation"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Book Location"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <uk.co.senab.photoview.PhotoView
+                    android:id="@+id/libraryMap"
+                    android:layout_width="800dp"
+                    android:layout_height="700dp"
+                    android:layout_below="@id/bookLocationTitle"
+                     />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

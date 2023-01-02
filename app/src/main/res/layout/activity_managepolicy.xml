@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#ffff">
+
+    <ImageView
+        android:id="@+id/ahs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:scaleType="center"
+        android:src="@drawable/librarytinted" />
+
+    <TextView
+        android:id="@+id/librarypolicy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="Library Policy"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/libraryContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/librarypolicy"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:gravity="center"
+        android:text="@string/policyContent"
+        android:textAlignment="viewStart"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+<!--    <com.google.android.material.textview.MaterialTextView-->
+<!--        android:id="@+id/notice"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/policy"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:drawableTop="@drawable/ic_sad_icon"-->
+<!--        android:drawablePadding="10dp"-->
+<!--        android:drawableTint="#ABAAA5A5"-->
+<!--        android:gravity="center"-->
+<!--        android:text=" No Policy found."-->
+<!--        android:textColor="#ABAAA5A5"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold" />-->
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+</RelativeLayout>

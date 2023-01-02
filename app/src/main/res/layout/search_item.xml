@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_bookimage"></ImageView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookTitle"
+            android:text="Book Title"
+            android:textStyle="bold"
+            android:textSize="12dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookAuthor"
+            android:text="Author"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookTitle"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookColNumber"
+            android:text="Col#"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookAuthor"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookPublisher"
+            android:text="Publisher"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookColNumber"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookCopies"
+            android:text="Undefined"
+            android:visibility="gone"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookPublisher"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bookCategory"
+            android:text="Category"
+            android:textSize="10dp"
+            android:layout_toRightOf="@id/imageView"
+            android:layout_below="@+id/bookCopies"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchBooksClick"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:animateLayoutChanges="true">
+
+    <TextView
+        android:id="@+id/bookDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:gravity="center"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:stateListAnimator="@null"
+        android:text="Book Details"
+        android:textColor="#752424"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exitButton"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="-40dp"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/backcorner"
+        android:text="✖"
+        android:textSize="30dp"
+        android:paddingStart="26dp"
+        android:translationZ="100dp"
+        android:elevation="10dp"
+        android:paddingTop="19dp"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/imageBookLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        android:visibility="gone"
+        android:background="#86686868"
+        android:translationZ="90dp">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/imageViewBookZoom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/icon_bookimage" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exit"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="-45dp"
+            android:layout_marginTop="-45dp"
+            android:background="@drawable/backcorner"
+            android:paddingEnd="30dp"
+            android:translationZ="100dp"
+            android:text="✖"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:paddingTop="20dp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="-1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="85dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="280dp"
+                android:layout_height="280dp"
+                android:layout_below="@+id/spacing"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/icon_bookimage" />
+
+            <LinearLayout
+                android:id="@+id/layout0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageView"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookTitleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Title"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookTitleTxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-74dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout0"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookAuthorTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Author"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookAuthorTxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-91dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout1"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookPublisherTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Publisher"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookPublisherTxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-110dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookCategoryTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Category"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/bookCategoryTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-105dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Lorem Ipsum"
+                    android:textColor="#2B0505"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout3"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookCopiesTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Copies"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookCopiesTxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-90dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Book Copies"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout4"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="-10dp">
+
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:paddingStart="35dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/ic_baseline_card_membership_24"
+                    app:tint="#390E0E" />
+
+                <TextView
+                    android:id="@+id/bookColNumberTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Book Call Number"
+                    android:textStyle="bold"
+                    android:textColor="#390E0E"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/bookColNumberTxt"
+                    android:textCursorDrawable="@null"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-128dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:text="Lorem Ipsum"
+                    android:layout_marginBottom="15dp"
+                    android:textColor="#2B0505"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/borrowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:layout_below="@id/layout5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="#752424"
+                android:padding="20dp"
+                android:paddingStart="80dp"
+                android:paddingEnd="80dp"
+                android:text="BORROW"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

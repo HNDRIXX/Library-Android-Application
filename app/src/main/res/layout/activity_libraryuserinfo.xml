@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LibraryUserInfo">
+
+    <TextView
+        android:id="@+id/libraryInfoTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:paddingBottom="20dp"
+        android:stateListAnimator="@null"
+        android:text="Library\nInformation"
+        android:textColor="#752424"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/generalinfo"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/libraryInfoTitle"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:padding="10dp"
+        android:text="General Information"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        android:textSize="16dp"
+        app:backgroundTint="#6E1616"
+        app:icon="@drawable/ic_baseline_info_24"
+        app:iconGravity="start"
+        app:iconSize="25dp"
+        app:iconTint="#390E0E" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/librarycontacts"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/generalinfo"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#FAFAFA"
+        android:padding="10dp"
+        android:text="Library Contacts"
+        android:textAlignment="viewStart"
+        android:textColor="#390E0E"
+        android:textSize="16dp"
+        app:icon="@drawable/ic_baseline_info_24"
+        app:iconGravity="start"
+        app:iconSize="25dp"
+        app:iconTint="#390E0E" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/backbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:padding="16dp"
+        android:text="Back"
+        android:textColor="@color/white"
+        app:backgroundTint="#752424"
+        app:icon="@drawable/ic_baseline_arrow_back_ios_24"
+        app:iconGravity="textTop"
+        app:iconTint="@color/white" />
+
+</RelativeLayout>

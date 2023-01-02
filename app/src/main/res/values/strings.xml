@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">LibraryApp</string>
+    <string name="title_activity_home">Home</string>
+
+    <string name="slide1">AHS Library Management Mobile Application is design for Araullo High School Library use. The purpose of this application is to provide a basic monitoring and management system for the Araullo High School library. It will help librarians to track their collection, check out and return books, register students in a database and much more.</string>
+
+    <string name="slide2">This Mobile Application is a Capstone Project prepared and submitted by <b>Patrick Lofranco, Lovely Toston, Mika Francisco, Cheska Grafil, Jamia Baldoviso</b> as partial fulfilment of the requirements for the degree of Bachelor of Science in Information Technology.</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="policyContent"><b><font size="17">Library Open Hours</font><font size="14">\n7:00AM - 4:00PM / 7:00AM - 6:00PM</font></b>
+        <font size="13">\n\nAlways wear your mask inside of our library and Keep the safe distance between others.</font>\n\n
+
+    <font size="23"><b>L</b></font> <font size="13">isten to the Librarian</font>\n
+    <font size="23"><b>I</b></font>  <font size="13">nquire (Ask) if you need help</font>\n
+    <font size="23"><b>B</b></font> <font size="13">e respectful of others and the library space</font>\n
+    <font size="23"><b>R</b></font> <font size="13">ead and Speak Quietly</font>\n
+    <font size="23"><b>A</b></font> <font size="13">lways walk</font>\n
+    <font size="23"><b>R</b></font> <font size="13">eturn books in right place</font>\n
+    <font size="23"><b>Y</b></font> <font size="13">ou are always welcome to come in!</font>\n\n
+
+    <font size="13">If you need assistance, you can ask for our librarian!</font>
+    </string>
+
+    <string name="issuebooks"><font size="30"><b>Issue Books</b></font><font size="22">\nRequest Borrow</font></string>
+    <string name="returnbooks"><font size="30"><b>Return Books</b></font><font size="22">\nConfirm Return</font></string>
+
+    <string name="languageContent"><b>400-499 Language :</b> (English, grammar and dictionaries)</string>
+    <string name="appliedScienceContent"><b>600-699 :</b> Technology and Applied Science (medicine, engineering, agriculture, home economics, radio, TV, and aviation)</string>
+    <string name="artsRecreationContent"><b>700-799 :</b> Fine Arts and Recreation (architecture, sculpture, painting, music, photography and recreation)</string>
+    <string name="philosphyContent"><b>100-199 :</b> Philosophy, psychology and logic</string>
+    <string name="generalWorksContent"><b>000-099 :</b> General References or Works (encyclopedias, biographies, periodicals and journalism)</string>
+    <string name="religionContent"><b>200-299 :</b> Religion (men’s faith)</string>
+    <string name="socialScienceContent"><b>300-399 :</b> Social Sciences (how people live and work in society; law, government and institutions)</string>
+    <string name="pureScienceContent"><b>500-599 :</b> Natural Science (Mathematics, astronomy, physics, chemistry, geology, paleontology, biology, zoology, and botany)</string>
+    <string name="literatureContent"><b>800-899 :</b>Literature (plays, poems, essays, literature in foreign languages)</string>
+    <string name="historyContent"><b>900-999 :</b> History and Biography (history, biography, geography and other related disciplines)</string>
+
+</resources>
